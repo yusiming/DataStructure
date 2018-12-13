@@ -270,7 +270,7 @@ public class AVLTreeMap<K extends Comparable<K>, V> implements Map<K, V> {
      *
      * @return 如果是返回true，否则返回false
      */
-    public boolean isBST() {
+    private boolean isBST() {
         List<K> keyList = new ArrayList<>();
         inOrder(root, keyList);
         for (int i = 1; i < keyList.size(); i++) {
@@ -301,7 +301,7 @@ public class AVLTreeMap<K extends Comparable<K>, V> implements Map<K, V> {
      *
      * @return 如果是平衡的返回true，否则返回false
      */
-    public boolean isBalanced() {
+    private boolean isBalanced() {
         return isBalanced(root);
     }
 
