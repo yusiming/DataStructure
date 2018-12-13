@@ -106,6 +106,7 @@ public class RBTree<K extends Comparable<K>, V> implements Map<K, V> {
         root = add(root, key, value);
         // 保持根节点为黑色
         root.color = BLACK;
+        java.util.Map map;
     }
 
     private Node add(Node node, K key, V value) {
